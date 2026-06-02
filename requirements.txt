@@ -2,3 +2,6 @@ requests==2.31.0
 pandas>=1.5.0
 numpy
 pycaret
+xgboost
+joblib
+shap
