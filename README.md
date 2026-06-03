@@ -2,7 +2,9 @@
 
 ## Contexto do Problema
 
-O monitoramento do espaço próximo à Terra envolve a detecção e classificação de objetos orbitais, que podem ser **lixo espacial**, **satélites ativos** ou **asteroides**. A classificação incorreta ou lenta desses objetos representa um risco operacional real: lixo espacial não rastreado pode colidir com satélites ativos, e asteroides mal identificados podem deixar de receber o monitoramento de trajetória necessário.
+É previsto que existam hoje aproximadamente 130 milhões de detritos na órbita terrestre. Esses objetos variam desde pequenos parafusos à satélites inativos viajando a velocidades que chegam a milhares de kilômetros por segundo, o que os torna capazes de destruir satélites operacionais e naves. A síndrome de Kessler, é um cenário em que colisões do espaço geram mais fragmentos, criando um efeito dominó incontrolável que poderia inutilizar órbitas inteiras ao redor da Terra. Essa situação é um perigo real tanto para as telecomunicações na terra quanto para as missões que estão em curso.
+
+Nossa solução se baseia em detectar e classificar objetos orbitais, que podem ser **lixo espacial**, **satélites ativos** ou **asteroides (incluindo meteoritos)**. A classificação incorreta ou lenta desses objetos representa um risco operacional: lixo espacial não rastreado pode colidir com satélites ativos, e a demora para sua detecção diminui o tempo de reação para ações como o acionamento de propulsores de satélites e naves com a intenção realizar uma manobra de desvio de lixos espaciais que podem estar vindo na rota de colisão.
 
 Este projeto propõe um modelo de machine learning capaz de classificar automaticamente objetos detectados no espaço a partir de características físicas e espectrais, com o objetivo de apoiar decisões operacionais com maior agilidade e precisão.
 
@@ -10,7 +12,7 @@ Este projeto propõe um modelo de machine learning capaz de classificar automati
 
 ## Fonte dos Dados
 
-Os dados foram gerados de forma sintética, simulando características físicas e instrumentais de objetos espaciais reais. O dataset contém **5.000 amostras** distribuídas em três classes:
+Os dados foram gerados de forma sintética utilizando inteligência artificial generativa, simulando características físicas e instrumentais de objetos espaciais reais. O dataset contém **5.000 amostras** distribuídas em três classes:
 
 | Classe | Descrição | Proporção |
 |--------|-----------|-----------|
@@ -124,8 +126,8 @@ A distribuição equilibrada das importâncias (nenhuma feature acima de 22%) in
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/vvctort1/space_object_predict.git
+cd space_object_predict
 
 # Crie e ative o ambiente virtual
 python -m venv venv
@@ -142,9 +144,9 @@ pip install -r requirements.txt
 ├── data/   
 │   └──objetos_espaciais_complexo.csv
 ├── models/
-│   └── modelo_xgb.joblib         # Modelo XGBoost treinado
+│   └── modelo_xgb.joblib         # Modelo XGBoost treinado 
 ├── notebooks/
-│   └── objetos_espaciais_XGBoost.ipynb
+│   └── objetos_espaciais.ipynb
 ├── requirements.txt
 └── README.md
 ```
@@ -152,7 +154,7 @@ pip install -r requirements.txt
 ### Executando o notebook
 
 ```bash
-jupyter notebook src/notebooks/objetos_espaciais_XGBoost.ipynb
+jupyter notebook src/notebooks/objetos_espaciais.ipynb
 ```
 
 ### Executando o deploy local (Gradio)
@@ -161,5 +163,6 @@ Execute as células do notebook até o bloco de Deploy com Gradio. A interface s
 
 ---
 
-## Link da Aplicação em Funcionamento
+## Link da Aplicação
 
+Para abrir o deploy da aplicação clique <a href="https://huggingface.co/spaces/vvctort1/detector_lixo_espacial">aqui</a>.

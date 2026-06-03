@@ -4,4 +4,7 @@ numpy
 pycaret
 xgboost
 joblib
+gradio
 shap
+scikit-learn
+matplotlib
