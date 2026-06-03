@@ -164,8 +164,8 @@ pip install -r requirements.txt
 │   └── notebooks/
 │      └── objetos_espaciais.ipynb
 │
-├── app.py
-├── requirements.txt
+├── app.py              # Código utilizado no deploy
+├── requirements.txt.    # Dependências do projeto
 └── README.md
 
 ```
@@ -176,11 +176,6 @@ pip install -r requirements.txt
 jupyter notebook src/notebooks/objetos_espaciais.ipynb
 ```
 
-### Executando o deploy local (Gradio)
-
-Execute as células do notebook até o bloco de Deploy com Gradio. A interface será iniciada automaticamente com `app.launch(share=True)`.
-
----
 
 ## Link da Aplicação
 
