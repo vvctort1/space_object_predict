@@ -146,14 +146,28 @@ pip install -r requirements.txt
 ### Estrutura do projeto
 
 ```
-├── data/   
-│   └──objetos_espaciais_complexo.csv
-├── models/
-│   └── modelo_xgb.joblib         # Modelo XGBoost treinado 
-├── notebooks/
-│   └── objetos_espaciais.ipynb
+
+├── src/
+│   │
+│   ├── data/   
+│   │   └── objetos_espaciais_complexo.csv
+│   │
+│   ├── img/   
+│   │   ├── deploy.png
+│   │   ├── feature_importance_xgboost.png
+│   │   ├── matrix_confusao.mlp.png
+│   │   └── shap.png
+│   │
+│   ├── models/   
+│   │   └── modelo_xgb.joblib         # Modelo XGBoost treinado 
+│   │
+│   └── notebooks/
+│      └── objetos_espaciais.ipynb
+│
+├── app.py
 ├── requirements.txt
 └── README.md
+
 ```
 
 ### Executando o notebook
