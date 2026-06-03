@@ -91,6 +91,10 @@ O XGBoost é mais adequado para este problema por:
 
 O SHAP (`TreeExplainer`) foi utilizado para explicar as decisões do XGBoost por classe:
 
+<div align="center">
+<img src="./src/img/shap.png" alt="SHAP image"> 
+</div>
+
 ### Feature Importance Global
 
 | Posição | Feature | Importância |
