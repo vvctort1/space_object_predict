@@ -95,6 +95,12 @@ O SHAP (`TreeExplainer`) foi utilizado para explicar as decisões do XGBoost por
 <img src="./src/img/shap.png" alt="SHAP image"> 
 </div>
 
+### Interpretação por classe
+
+- **Lixo Espacial** — identificado principalmente por alta `taxa_rotacao_rpm` (rotação caótica) e alta `variacao_brilho_luz_solar` (pisca ao girar)
+- **Satélite Ativo** — distinguido pela combinação de `taxa_rotacao_rpm` próxima de zero (estabilização ativa) e baixa `rugosidade_superficie`
+- **Asteroide** — separado pelos valores baixos de `indice_espectral_metal` e alta `rugosidade_superficie`, refletindo composição rochosa natural
+
 ### Feature Importance Global
 
 | Posição | Feature | Importância |
@@ -109,11 +115,6 @@ O SHAP (`TreeExplainer`) foi utilizado para explicar as decisões do XGBoost por
 | 8° | `variacao_termica_k` | 3.1% |
 | 9° | `densidade_estimada_kg_m3` | 1.7% |
 
-### Interpretação por classe
-
-- **Lixo Espacial** — identificado principalmente por alta `taxa_rotacao_rpm` (rotação caótica) e alta `variacao_brilho_luz_solar` (pisca ao girar)
-- **Satélite Ativo** — distinguido pela combinação de `taxa_rotacao_rpm` próxima de zero (estabilização ativa) e baixa `rugosidade_superficie`
-- **Asteroide** — separado pelos valores baixos de `indice_espectral_metal` e alta `rugosidade_superficie`, refletindo composição rochosa natural
 
 A distribuição equilibrada das importâncias (nenhuma feature acima de 22%) indica que o modelo aprende padrões multivariados, sem dependência excessiva de uma única variável.
 
