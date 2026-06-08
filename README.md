@@ -180,3 +180,13 @@ jupyter notebook src/notebooks/objetos_espaciais.ipynb
 ## Link da Aplicação
 
 Para abrir o deploy da aplicação clique <a href="https://huggingface.co/spaces/vvctort1/detector_lixo_espacial">aqui</a>.
+
+---
+
+## Integrantes do Grupo
+
+| Nome | RM |
+|------|----|
+| Victor Kenzo Toma | RM551649 |
+| Arthur Baldissera Claumann Marcos | RM550219 |
+| Ricardo Ramos Vergani | RM550166 |
