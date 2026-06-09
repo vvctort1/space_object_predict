@@ -92,7 +92,9 @@ O XGBoost é mais adequado para este problema por:
 O SHAP (`TreeExplainer`) foi utilizado para explicar as decisões do XGBoost por classe:
 
 <div align="center">
-<img src="./src/img/shap.png" alt="SHAP image"> 
+  <img src="./src/img/shap1.png" alt="SHAP lixo espacial image" width="32%">
+  <img src="./src/img/shap2.png" alt="SHAP satelite ativo image" width="32%">
+  <img src="./src/img/shap3.png" alt="SHAP asteroide image" width="32%">
 </div>
 
 ### Interpretação por classe
